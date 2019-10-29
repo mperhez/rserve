@@ -6,8 +6,6 @@ ENV RSERVE=Rserve_1.7-3.1.tar.gz
 ENV RCURL=RCurl_1.95-4.12.tar.gz
 ENV RPROTOBUF=RProtoBuf_0.4.14.tar.gz
 
-COPY Rserve.conf /etc/
-
 RUN apt-get update  \
         && apt-get install -y \
         libcurl4-gnutls-dev \
